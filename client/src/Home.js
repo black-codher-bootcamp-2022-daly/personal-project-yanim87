@@ -12,7 +12,7 @@ function Home() {
           <Product
             id="001"
             title="Organic Pure Traditional Nigerian Black Soap 150g"
-            price={7.0}
+            price={7.00}
             image="images/NigerianBlackSoap.png"
             rating="🌟 BESTSELLER🌟 "
           />
@@ -20,7 +20,7 @@ function Home() {
           <Product
             id="002"
             title="Organic Nigerian Unrefined Raw Shea Butter 200g"
-            price={7.0}
+            price={7.00}
             image="/images/OrganicSheaButter.png"
             rating="🌟 BESTSELLER🌟 "
           />
@@ -30,7 +30,7 @@ function Home() {
           <Product
             id="003"
             title="Homemade Elderberry Syrup 200ml"
-            price={18.0}
+            price={18.00}
             image="/images/HomemadeElderberrySyrup.png"
             rating="🌟 BESTSELLER🌟 "
           />
@@ -38,7 +38,7 @@ function Home() {
           <Product
             id="004"
             title="Organic Coconut Sugar 500g"
-            price={7.5}
+            price={7.50}
             image="/images/OrganicSheaButter.png"
             rating="🌟 BESTSELLER🌟 "
           />

@@ -13,7 +13,7 @@ function Product ({id, title, image, price, rating}) {
                 {Array(rating)
                 .fill()
                 .map((_, i) => (
-                    <p>🌟 BESTSELLER🌟 </p>
+                    <p>{id}🌟 BESTSELLER🌟 </p>
                 ))}
 
                
@@ -26,6 +26,26 @@ function Product ({id, title, image, price, rating}) {
         />
         <button onClick>Add to Basket</button>
     </div>)
-}
 
+}
+const addProductToBasket = () => {
+    return(console.log(addProductToBasket))
+};
+function addProductToBasket(product) {
+    console.log(product);
+    const newBasket = basket;
+    newBasket.push(product);
+ setBasket(newBasket);
+
+};
+const removeProductFromBasket = (id) => {
+    const newProducts = [];
+    basket.forEach ((products) => {
+if (products.id === id ) {
+    newProducts.push(products);
+}
+return products
+    });
+    
+}
 export default Product;

@@ -56,12 +56,17 @@ function App() {
     <Router>
       <div className="app">
         <Routes>
-          <Route path="/checkout" element={<Checkout />}></Route>
-          <Route path ="/home" element={<Home/>}></Route>
+          <Route path="/home" element={<Home />}>
+            <Header />
+            <Route path="/checkout" element={<Checkout />}>
+              <Route path="/blog" element={<Blog />}></Route>
+            </Route>
+          </Route>
         </Routes>
       </div>
     </Router>
   );
 }
+
 
 export default App;

@@ -9,23 +9,69 @@ db.profiles.drop();
 // Insert a few documents into the profiles collection.
 db.profiles.insertMany([  
     {
-        "first_name": "Efua",
-        "last_name": "Akumanyi",
-        "location": "London"
+        "id": "001",
+        "product_name": "Organic Nigerian Black Soap",
+        "category": "body&beauty",
+        "size_weight": "200",
+        "price": "7.99",
+        "rating": "bestseller"
     },
     {
-        "first_name": "Gary",
-        "last_name": "McPherson",
-        "location": "London"
+        "id": "002",
+        "product_name": "Organic Nigerian Unrefined Raw Shea Butter",
+        "category": "body&beauty",
+        "size_weight": "500",
+         "price": "12.00",
+        "rating": "bestseller"
     },
     {
-        "first_name": "Tanya",
-        "last_name": "Powell",
-        "location": "London"
+         "id": "003",
+        "product_name": "Homemade Elderberry Syrup",
+        "category": "health & wellbeing",
+        "size_weight": "200",
+        "price": "18.00",
+        "rating": "bestseller"
     },
     {
-        "first_name": "Michael",
-        "last_name": "Hael",
-        "location": "Port Harcourt city"
-    }
+        "id": "004",
+        "product_name": "Organic Coconut Sugar",
+        "category": "Kitchen",
+        "size_weight": "500",
+        "price": "7.50",
+        "rating": "bestseller"
+    },
+    {
+        "id": "005",
+        "product_name": "Organic Black Seeds",
+        "category": "health&wellbeing",
+        "size_weight": "60",
+        "price": "5.99",
+        "rating": "bestseller"
+    },
+   {
+      "id": "006",
+        "product_name": "Organic Pure Pink Himalayan Salt",
+        "category": "Kitchen",
+        "size_weight": "700",
+        "price": "4.99",
+        "rating": "bestseller" 
+   },
+   {
+       "id": "007",
+        "product_name": "Homemade Muscle and Joint Balm",
+        "category": "health&wellbeing",
+        "size_weight": "130",
+        "price": "10.49",
+        "rating": "bestseller"
+   },
+   {
+       "id": "008",
+        "product_name": "Organic Nigerian Unrefined Raw Shea Butter",
+        "category": "body&beauty",
+        "size_weight": "200",
+        "price": "7.00",
+        "rating": "bestseller"
+   }
+
+
 ]);
