@@ -22,7 +22,7 @@ import React from "react";
 //     return (
 //       <li key={user._id}>
 //         <h3>
-//           {`${user.first_name} 
+//           {`${user.first_name}
 //           ${user.last_name}`}
 //         </h3>
 //         <p>{user.location}</p>
@@ -43,21 +43,24 @@ import React from "react";
 //   );
 // }
 // import logo from './logo.svg';
-import './App.css';
-import Header from './Header.js';
-import Home from "./Home.js";
-
+import "./App.css";
+import Header from "./Header";
+import Home from "./Home";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Checkout from "./Checkout";
+import Blog from "./Blog";
 
 function App() {
   return (
     // BEM
-    <div className="app">
-  
-      <Header />
-      <Home /> 
-     
-
-    </div>
+    <Router>
+      <div className="app">
+        <Routes>
+          <Route path="/checkout" element={<Checkout />}></Route>
+          <Route path ="/home" element={<Home/>}></Route>
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
