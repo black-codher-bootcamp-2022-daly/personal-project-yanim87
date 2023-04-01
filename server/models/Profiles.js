@@ -2,9 +2,12 @@ const mongoose = require("mongoose");
 const { Schema } = mongoose;
 
 const profileSchema = new Schema({
-  first_name: String,
-  last_name: String,
-  location: String,
+  id: Number,
+  product_name: String,
+  category: String,
+  size_weight: Number,
+  price: Number,
+  rating: String,
 });
 
 mongoose.model("profiles", profileSchema);
