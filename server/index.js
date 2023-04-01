@@ -33,7 +33,18 @@ mongoose.connect(process.env.DATABASE_CONNECTION_STRING)
 require("./routes/profilesRoutes")(app, db); 
 
 const PORT = process.env.PORT;
-
+app.get('/api/profiles', async (req, res) => {
+  const terms = await profiles().find({}).toArray();
+  return res.status(200).send(terms);
+});
+app.get('/api/profiles/:id' , async (req, res) => {
+  const ItemId = req.params.id;
+  const item = await profiles.find({_id: new ProductId(ItemId)});
+  if (!item) {
+    return res.status(404).send("Item not found");
+  }
+  return res.status(200).send(term);
+})
 app.listen(process.env.PORT, () => {
   console.log(`API running on port ${process.env.PORT}`);
 });
